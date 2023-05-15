@@ -142,7 +142,7 @@ class TimeFreqSeparableConv(nn.Module):
         x1 = x1 + identity1
         # Time-wise convolution block
         x2 = self.time_dw_conv(x2)
-        x2 = x2.mean(3, keepdim=True)  # temporal average pooling
+        x2 = x2.mean(3, keepdim=True)  # time average pooling
         x2 = self.time_pw_conv(x2)
         x2 = self.dropout(x2)
         x2 = x2 + identity2
