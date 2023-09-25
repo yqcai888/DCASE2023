@@ -94,14 +94,14 @@ class ConvBlock(nn.Module):
         return x
 
 
-class TimeFreqSeparableConv(nn.Module):
+class TimeFreqSepConvs(nn.Module):
     def __init__(self,
                  in_channels,
                  out_channels,
                  dropout_rate=0.2,
                  shuffle=False,
                  shuffle_groups=10):
-        super(TimeFreqSeparableConv, self).__init__()
+        super(TimeFreqSepConvs, self).__init__()
         self.transition = in_channels != out_channels
         self.shuffle = shuffle
         self.half_channels = out_channels // 2
