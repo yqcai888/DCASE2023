@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from common import TimeFreqSeparableConv, AdaResNorm
+from common import TimeFreqSepConvs, AdaResNorm
 
 defaultcfg = {
     18: ['CONV', 'N', 1, 1, 'N', 'M', 1.5, 1.5, 'N', 'M', 2, 2, 'N', 2.5, 2.5, 2.5, 'N'],
@@ -35,13 +35,13 @@ class TfSepNet(torch.nn.Module):
                 layers += [nn.MaxPool2d(kernel_size=2, stride=2)]
             elif v != vt:
                 layers += [
-                    TimeFreqSeparableConv(in_channels=round(vt * self.width), out_channels=round(v * self.width),
+                    TimeFreqSepConvs(in_channels=round(vt * self.width), out_channels=round(v * self.width),
                                             dropout_rate=self.dropout_rate, shuffle=self.shuffle,
                                             shuffle_groups=self.shuffle_groups)]
                 vt = v
             else:
                 layers += [
-                    TimeFreqSeparableConv(in_channels=round(vt * self.width), out_channels=round(vt * self.width),
+                    TimeFreqSepConvs(in_channels=round(vt * self.width), out_channels=round(vt * self.width),
                                             dropout_rate=self.dropout_rate, shuffle=self.shuffle,
                                             shuffle_groups=self.shuffle_groups)]
         return nn.Sequential(*layers)
