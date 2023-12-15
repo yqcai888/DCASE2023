@@ -5,18 +5,21 @@ The tf-sepnet.py file contains the implementation of our proposed neural network
 ## device_simulate.py
 The device_simulate.py file is designed for simulating an audio recording from the original device to new devices. It utilizes impulse response files from the [MicIRP](http://micirp.blogspot.com/?m=1) dataset to synthesize the acoustic characteristics of different devices to the original audio recording.
 ## Citation
-Please cite our papers if you find this code helps. Thank you very much!
-If you are using TF-SepNet, please cite:
+If you are using TF-SepNet, we would appreciate using the following citation:
+```
 @article{cai2023tf,
   title={TF-SepNet: An Efficient 1D Kernel Design in CNNs for Low-Complexity Acoustic Scene Classification},
   author={Cai, Yiqiang and Zhang, Peihong and Li, Shengchen},
   journal={arXiv preprint arXiv:2309.08200},
   year={2023}
 }
-If you are using device simulation or adaptive residual normalization, please cite:
+```
+If you are using device simulation or adaptive residual normalization, we would appreciate using the following citation:
+```
 @techreport{Cai2023a,
     Author = "Cai, Yiqiang and Lin, Minyu and Zhu, Chenyang and Li, Shengchen and Shao, Xi",
     title = "{DCASE}2023 Task1 Submission: Device Simulation and Time-Frequency Separable Convolution for Acoustic Scene Classification",
     institution = "Detection and Classification of Acoustic Scenes and Events (DCASE) Challenge",
     year = "2023",
 }
+```
