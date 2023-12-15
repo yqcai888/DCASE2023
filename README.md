@@ -4,6 +4,8 @@ This repository contains the source code of our new ideas for the [DCASE 2023 Ch
 The tf-sepnet.py file contains the implementation of our proposed neural network architecture called **TF-SepNet**. The latest paper has been published on [arXiv](https://arxiv.org/abs/2309.08200).
 ## device_simulate.py
 The device_simulate.py file is designed for simulating an audio recording from the original device to new devices. It utilizes impulse response files from the [MicIRP](http://micirp.blogspot.com/?m=1) dataset to synthesize the acoustic characteristics of different devices to the original audio recording.
+## common.py
+The **Adaptive Residual Normaliztion** has been included in common.py.
 ## Citation
 If you are using TF-SepNet, we would appreciate using the following citation:
 ```
