@@ -7,7 +7,7 @@ The device_simulate.py file is designed for simulating an audio recording from t
 ## common.py
 The **Adaptive Residual Normaliztion** has been included in common.py.
 ## Citation
-If you are using TF-SepNet, we would appreciate using the following citation:
+If you find our code helps, we would appreciate using the following citations:
 ```
 @article{cai2023tf,
   title={TF-SepNet: An Efficient 1D Kernel Design in CNNs for Low-Complexity Acoustic Scene Classification},
@@ -16,7 +16,6 @@ If you are using TF-SepNet, we would appreciate using the following citation:
   year={2023}
 }
 ```
-If you are using device simulation or adaptive residual normalization, we would appreciate using the following citation:
 ```
 @techreport{Cai2023a,
     Author = "Cai, Yiqiang and Lin, Minyu and Zhu, Chenyang and Li, Shengchen and Shao, Xi",
