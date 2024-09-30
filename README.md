@@ -9,11 +9,13 @@ The **Adaptive Residual Normaliztion** has been included in common.py.
 ## Citation
 If you find our code helps, we would appreciate using the following citations:
 ```
-@article{cai2023tf,
-  title={TF-SepNet: An Efficient 1D Kernel Design in CNNs for Low-Complexity Acoustic Scene Classification},
+@inproceedings{cai2024tf,
+  title={TF-SepNet: An Efficient 1D Kernel Design in Cnns for Low-Complexity Acoustic Scene Classification},
   author={Cai, Yiqiang and Zhang, Peihong and Li, Shengchen},
-  journal={arXiv preprint arXiv:2309.08200},
-  year={2023}
+  booktitle={ICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={821--825},
+  year={2024},
+  organization={IEEE}
 }
 ```
 ```
